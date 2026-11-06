@@ -1,0 +1,11 @@
+{
+  "name": "github-radar-extension",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Local Chrome extension for discovering and tracking GitHub projects.",
+  "scripts": {
+    "test": "node --test tests/",
+    "check": "node scripts/check-extension.mjs"
+  }
+}

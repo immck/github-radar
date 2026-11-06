@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GitHub Radar</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">◉</div>
+          <div>
+            <div class="brand-name">GitHub Radar</div>
+            <div class="brand-sub">本地开源情报</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <p class="nav-label">工作台</p>
+          <a href="#/discover" data-nav="discover"><span class="nav-icon">◎</span>项目发现</a>
+          <a href="#/trending" data-nav="trending"><span class="nav-icon">↗</span>今日热门</a>
+          <a href="#/favorites" data-nav="favorites"><span class="nav-icon">☆</span>我的收藏</a>
+          <p class="nav-label">系统</p>
+          <a href="#/settings" data-nav="settings"><span class="nav-icon">⚙</span>设置</a>
+        </nav>
+        <div class="sidebar-foot" id="sideFoot">本地数据 · 不上传</div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <span class="topbar-title" id="topTitle">项目发现</span>
+          <div class="topbar-right">
+            <span id="syncStatus"><span class="status-dot"></span>未采集</span>
+            <button class="btn btn-primary" id="crawlBtn" type="button">立即采集</button>
+          </div>
+        </header>
+        <div class="content" id="app"></div>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script type="module" src="dashboard.js"></script>
+  </body>
+</html>

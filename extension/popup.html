@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GitHub Radar</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="mark">◉</div>
+        <div class="brand">
+          <strong>GitHub Radar</strong>
+          <span id="status">读取本地数据…</span>
+        </div>
+        <button id="settings" class="ghost" title="设置" aria-label="设置">⚙</button>
+      </header>
+
+      <section class="stats" id="stats"></section>
+
+      <section class="list" id="list"></section>
+
+      <footer>
+        <button id="open" class="primary">打开面板</button>
+        <button id="crawl">立即采集</button>
+      </footer>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
